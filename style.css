@@ -1,0 +1,82 @@
+body{
+    background-color:#121212;
+    font-family:"DM Sans", sans-serif
+}
+
+h1{
+    color:white;
+    text-align:center;
+}
+.conteiner{
+    width:20%;
+    min-width:300px;
+    height:400px;
+    background-color:#000000;
+    position:absolute;
+    left:40%;
+    top:15%;
+    border-radius:10px;
+}
+
+.conteiner-results{
+    display:flex;
+    justify-content:space-around;
+    height:100px;
+    width:100%;
+    border-radius:10px;
+}
+
+.conteiner-results_boxInput{
+    background-color:black;
+    width:85%;
+    text-align:center;
+    border-radius:10px;
+}
+
+#input{
+    width:97%;
+    position:relative;
+    top:79px;
+    color:white;
+    background-color:transparent;
+    border:none;
+    font-size:20pt
+}
+
+.conteiner-results_boxDelete{
+    width:15%;
+    text-align:center;
+    color:red;
+    font-size:25pt;
+    line-height:100px;
+    border-radius:10px;
+}
+.conteiner-operations{
+    background-color:black;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3px;
+    height:100%;
+    padding:10px 3px 4px 3px;
+    border-radius:10px;
+}
+
+.conteiner-operations-number{
+    width:90px;
+    height:90px;
+    background-color:#1d1c1c;
+    color:white;
+    text-align:center;
+    border-radius:5px;
+    line-height:90px
+}
+.conteiner-operations-number:hover{
+    background-color:#383636;
+    transition:0.9s
+}
+
+
+.operations{
+    background-color:orangered;
+}

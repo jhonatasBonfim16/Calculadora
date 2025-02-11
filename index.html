@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1 class="titulo">Calculadora</h1>
+
+    <div class="conteiner">
+        <div class="conteiner-results">
+            <div class="conteiner-results_boxInput">
+                <input type="number" id="input" value="0">
+            </div>
+            <div class="conteiner-results_boxDelete">X</div>
+        </div>
+        <div class="conteiner-operations">
+            <div class="conteiner-operations-number" onclick="AddNumber(7)">7</div>
+            <div class="conteiner-operations-number" onclick="AddNumber(8)">8</div>
+            <div class="conteiner-operations-number" onclick="AddNumber(9)">9</div>
+            <div class="conteiner-operations-number" class="operations">/</div>
+            <div class="conteiner-operations-number" onclick="AddNumber(4)">4</div>
+            <div class="conteiner-operations-number" onclick="AddNumber(5)">5</div>
+            <div class="conteiner-operations-number" onclick="AddNumber(6)">6</div>
+            <div class="conteiner-operations-number" class="operations">X</div>
+            <div class="conteiner-operations-number" onclick="AddNumber(1)">1</div>
+            <div class="conteiner-operations-number" onclick="AddNumber(2)">2</div>
+            <div class="conteiner-operations-number" onclick="AddNumber(3)">3</div>
+            <div class="conteiner-operations-number" class="operations">-</div>
+            <div class="conteiner-operations-number" onclick="AddNumber(0)">0</div>
+            <div class="conteiner-operations-number" class="operations">.</div>
+            <div class="conteiner-operations-number" class="operations">=</div>
+            <div class="conteiner-operations-number" class="operations">+</div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
