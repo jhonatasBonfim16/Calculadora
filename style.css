@@ -1,6 +1,7 @@
 body{
     background-color:#121212;
-    font-family:"DM Sans", sans-serif
+    font-family:"DM Sans", sans-serif;
+    font-weight:400
 }
 
 h1{
@@ -38,9 +39,17 @@ h1{
     position:relative;
     top:79px;
     color:white;
-    background-color:transparent;
+    background:transparent;
     border:none;
-    font-size:20pt
+    font-size:20pt;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    outline:none
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
 }
 
 .conteiner-results_boxDelete{
@@ -69,14 +78,72 @@ h1{
     color:white;
     text-align:center;
     border-radius:5px;
-    line-height:90px
+    flex-shrink: 1;
+    line-height:90px;
+    font-size:18pt
 }
 .conteiner-operations-number:hover{
     background-color:#383636;
-    transition:0.9s
+    transition:0.9s;
 }
 
 
 .operations{
     background-color:orangered;
+    width:90px;
+    height:90px;
+    color:white;
+    text-align:center;
+    border-radius:5px;
+    flex-shrink: 1;
+    line-height:90px;
+    font-size:18pt;
 }
+
+
+.footer{
+    position:fixed;
+    bottom:0px;
+    background: linear-gradient(
+        to right,
+        blue,
+        indigo,
+        violet
+      );
+    color:white;
+    display:flex;
+    padding:15px 40px;
+    left:0px;
+    right:0px;
+    justify-content:space-between
+}
+
+.text{
+    flex-shrink:1;
+}
+
+.text .title{
+    margin-bottom:10px;
+    text-transform:uppercase;
+    font-weight:400;
+
+}
+.text .subtitle{
+    margin-bottom:10px;
+    font-weight:500;
+    font-size:14px
+}
+
+
+.button{
+    background-color:#ffff;
+    color:#000000;
+    font-size:16pt;
+    font-weight:bold;
+    padding:14px 30px;
+    border:0px;
+    border-radius:40px;
+    cursor:pointer;
+    flex-shrink:0
+}
+
